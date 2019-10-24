@@ -1,0 +1,13 @@
+<% include partials/header.ejs %>
+
+<h2>Testing the params</h2>
+<h3>You love <%= thing %></h3>
+
+<% if(thing.toLowerCase() === "samsung"){ %>
+    <h3>Good Choice,Samsung is the best !!</h3>
+<% }else{ %>
+
+    <h4>Not good! You should checkout Samsung!</h4>
+<% } %>
+
+<% include partials/footer.ejs %>

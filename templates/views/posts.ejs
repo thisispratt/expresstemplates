@@ -1,0 +1,13 @@
+<% include partials/header.ejs%>
+
+<h1>THE POSTS PAGE</h1>
+<h2>Welcome <%= username %></h2>
+
+<!-- //for every post builiding up a list -->
+    <% post.forEach(function(post){ %>
+       <li>
+           <%= post.title %> - <%= post.author %>
+       </li>
+    <% }); %> 
+
+ <% include partials/footer.ejs %>
